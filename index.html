@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Terse introduction to web programming</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='css/reveal.css'>
+    <link rel='stylesheet' href='css/theme/simple.css'>
+    <link rel='stylesheet' href='lib/css/zenburn.css'>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+
+  <body>
+    <div class='reveal'>
+      <div class='slides'>
+        <section>
+          <h2>Terse introduction to web programming</h2>
+
+          <p>
+            <a href='http://murilopereira.com'>Murilo Pereira</a>
+            (<a href='http://twitter.com/mpereira'>@mpereira</a>),
+            May 14th 2013
+          </p>
+
+          <img src='programming.gif'>
+        </section>
+
+        <section>
+          <h1>Me</h1>
+
+          <ul>
+            <li>Dropped out of computer science</li>
+
+            <li>
+              Started a company called Meleva. It helps people share taxis in
+              Brazil
+            </li>
+
+            <li>Startup Chile</li>
+
+            <li>Programming professionally since 2010</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Programming: why should you care?</h2>
+
+            <ul>
+              <li>Will you start your own company?</li>
+
+              <li>Do you have ideas for creating businesses?</li>
+
+              <li>Being a god</li>
+
+              <li>Automating boring tasks</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Knowning how to tell computers what to do is a powerful thing</h2>
+
+            <img src='women_coders.jpg'>
+          </section>
+
+          <section>
+            <h2>Sometimes it will be frustrating, though</h2>
+
+            <img src='human_computer_frustration.jpg'>
+          </section>
+
+          <section>
+            <h2>Starting off</h2>
+            <h2>Q: what's the world wide web made of?</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>A: Web browsers and servers (connected by cables)</h2>
+
+            <aside class='notes'>
+              Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+            </aside>
+          </section>
+
+          <section data-transition='fade'>
+            <h2>Web browser makes the request to the server</h2>
+
+            <img src='request.png'>
+
+            <aside class='notes'>
+            </aside>
+          </section>
+
+          <section data-transition='fade'>
+            <h2>Web server responds to the web browser with a file</h2>
+
+            <img src='response.png'>
+
+            <aside class='notes'>
+            </aside>
+          </section>
+
+          <section data-transition='fade'>
+            <h2>Web browser renders file sent by the web server</h2>
+
+            <img src='render.png'>
+
+            <aside class='notes'>
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>HTML</h2>
+
+            <p>
+              The file received and rendered by the web browser is an HTML file.
+              This type of file is made of plain text formatted in a way that
+              browsers interpret its content and render it accordingly.
+            </p>
+          </section>
+
+          <section>
+            <h3>
+              HTML is used to represent the <strong>content</strong> of web
+              pages (text, images, links, etc.)
+            </h3>
+          </section>
+
+          <section>
+            <h3>Example HTML file</h3>
+
+            <pre>
+              <code class='html'>
+                &lt;html&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;Hello World&lt;/h1&gt;
+
+                    &lt;p&gt;First steps in HTML&lt;p&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+
+            <img src='down_arrow.png' alt='Down arrow' class='unstyled-image'>
+
+            <div class='html-body-output'>
+              <h1>Hello World</h1>
+
+              <p>First steps in HTML<p>
+            </div>
+          </section>
+
+          <section>
+            <h2>CSS</h2>
+
+            <p>
+              Along with the HTML file returned by the web server may come a
+              CSS file. CSS is a language used to specify how the HTML should
+              be rendered on web browsers.  It says how the layout, colors,
+              fonts and other things should look like.
+            </p>
+          </section>
+
+          <section>
+            <h3>
+              CSS is used to describe the <strong>presentation</strong> of web
+              pages (how they look).
+            </h3>
+          </section>
+
+          <section>
+            <h2>Example CSS file</h2>
+
+            <pre>
+              <code class='css'>
+                body { background-color: yellow; }
+
+                h1 { font-size: 30px; }
+
+                p { border: 5px solid blue }}
+              </code>
+            </pre>
+          </section>
+
+          <section data-transition='fade'>
+            <h2>HTML + CSS</h2>
+
+            <pre>
+              <code class='html'>
+                &lt;html&gt;
+                  &lt;body&gt;
+                    &lt;h1&gt;Hello World&lt;/h1&gt;
+
+                    &lt;p&gt;First steps in HTML&lt;p&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+
+            <pre>
+              <code class='css'>
+                body { background-color: yellow; }
+
+                h1 { font-style: italic; }
+
+                p { border: 5px solid blue }
+              </code>
+            </pre>
+          </section>
+
+          <section data-transition='fade'>
+            <h2>HTML + CSS</h2>
+
+            <div style='background-color: yellow'>
+              <h1 style='font-style: italic'>Hello World</h1>
+
+              <p style='border: 5px solid blue'>First steps in HTML<p>
+            </div>
+          </section>
+
+          <section>
+            <h2>JavaScript</h2>
+
+            <ul>
+              <li>Programming language</li>
+              <li>Manipulate web pages (HTML and CSS)</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>"Hacking" with JavaScript</h1>
+          </section>
+
+          <section>
+            <h2>
+              <a href='https://www.facebook.com/zuck' target='_blank'>
+                Fun with Mark Zuckerberg's Facebook profile
+              </a>
+            </h2>
+
+            <pre class='javascript'><code>
+  var profilePic = document.getElementsByClassName('profilePic')[0];
+  profilePic.src = 'http://i276.photobucket.com/albums/kk8/martinthurssoon/th_ZuckerMovie.gif';
+
+  profilePic.src = 'http://cdn.uproxx.com/wp-content/uploads/2012/05/mark-zuckerberg.jpg';
+
+  var profileName = document.getElementsByClassName('_8_2')[0];
+  profileName.innerHTML = 'Marky Zubemkerg $$$';
+
+  var nyanCat = document.createElement('img');
+  nyanCat.src = 'http://fc05.deviantart.net/fs70/f/2012/168/e/4/nyan_cat__sparta__gif__by_lookincool45-d53trrz.gif';
+  nyanCat.style.position = 'absolute';
+  nyanCat.style.top = '350px';
+  nyanCat.style.left = '150px';
+  nyanCat.style.width = '80%';
+  nyanCat.style.zIndex = '1000';
+  document.getElementsByTagName('body')[0].appendChild(nyanCat);
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>
+              <a href='http://en.wikipedia.org/wiki/Barack_Obama' target='_blank'>
+                Making Barack Obama's Wikipedia page more memorable
+              </a>
+            </h2>
+
+            <pre class='javascript'><code>
+  var image = document.getElementsByClassName('image')[0].getElementsByTagName('img')[0];
+  image.src = 'http://i.minus.com/ibnMfO5dXlo1FG.gif';
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Practical uses</h2>
+
+            <p>You can use HTML, CSS and JavaScript to make lots of things:</p>
+
+            <ul>
+              <li>Web sites</li>
+              <li>Games</li>
+              <li>Mobile applications</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>With JavaScript alone you can program pretty much anything:</h2>
+
+            <ul>
+              <li>Web servers</li>
+              <li>Robots</li>
+              <li>Flying robots</li>
+              <li>Laser beams</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Example game made using HTML, CSS and JavaScript</h2>
+
+          <iframe width='800'
+                  height='480'
+                  src='http://www.youtube.com/embed/YCb81WvFg4U'
+                  frameborder='0'
+                  allowfullscreen></iframe>
+        </section>
+
+        <section>
+          <h1>Summing up</h1>
+
+          <ul>
+            <li>Learning how to program allows you to implement your own ideas</li>
+
+            <li>Getting the basics is not hard and can get you a long way</li>
+
+            <li>
+              Even if you are not interested in following a programming career,
+              having a decent grasp of how computers work will change the way you
+              solve problems
+            </li>
+
+            <li>Programming is fun and you should do it</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Inspiration</h2>
+
+          <iframe width='800'
+                  height='480'
+                  src='http://www.youtube.com/embed/nKIu9yen5nc'
+                  frameborder='0'
+                  allowfullscreen></iframe>
+        </section>
+
+        <section>
+          <h2>Further reading</h2>
+
+          <ul>
+            <li>
+              <a href='https://developer.mozilla.org/es/learn' target='_blank'>
+                "Aprende como hacer sítios web", by Mozilla
+              </a>
+            </li>
+
+            <li>
+              <a href='http://youtu.be/60O1CJqh8IM' target='_blank'>
+                Video series introducing HTML, CSS and JavaScript, by Google
+              </a>
+            </li>
+
+            <li>
+              <a href='http://youtu.be/GVGMjsKy3WQ' target='_blank'>
+                Video of a JavaScript-controlled autonomous robot
+              </a>
+            </li>
+
+            <li>
+              <a href='http://nodecopter.com/' target='_blank'>
+                Programming flying robots with JavaScript
+              </a>
+            </li>
+
+            <li>
+              <a href='http://phonegap.com/' target='_blank'>
+                Create mobile applications with HTML, CSS and JavaScript
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Caveat</h2>
+
+          <p>
+            While it's possible for you to learn enough --for some definition
+            of enough-- becoming a great programmer requires tens of thousands
+            of hours of hard work.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src='lib/js/head.min.js'></script>
+    <script src='js/reveal.js'></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || 'linear',
+
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11111111-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
